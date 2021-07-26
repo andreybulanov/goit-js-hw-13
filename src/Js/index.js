@@ -9,6 +9,6 @@ import './sass/main.scss';
 const { form, gallery, loadMoreBtn, loadMoreLabel, loadMoreSpinner } = refs;
 
 
-import fetchImg from '../Js/servisApi';
+import fetchImg from './servisApi';
 fetchImg().then(data => console.log(data)
 )
