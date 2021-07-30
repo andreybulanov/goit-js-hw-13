@@ -1,42 +1,30 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-    
-      <title>Заголовок страницы</title>
-
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-      
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
+    <title>Homework 10</title>
   </head>
   <body>
-
     <form class="search-form" id="search-form">
-      <input type="text" name="query" autocomplete="off" placeholder="Search images..." />
-      <!-- <input type="checkbox" checked /> -->
-    </form>
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button type="submit" class="searchBtn">Search</button>
+      </form>
+      <button type="button" class="load-more">Load more</button>
 
-    <ul class="gallery js-gallery">
-      <!-- Список <li> с карточками изображений -->
-    </ul>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+      <div class="gallery">
+        <!-- Карточки изображений -->
+      </div>
 
-    <button type="button" class="btn btn-primary button is-hidden" data-action="load-more">
-      <span class="spinner-border spinner-border-sm spinner is-hidden" role="status" aria-hidden="true"></span>
+
+
     
-      <span class="label">Показать ещё</span>
-    </button>
-
-
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <script src="./Js/index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
