@@ -25,6 +25,8 @@ async function onSearch(e){
     e.preventDefault();
     newsApiService.resetPage();
     newsApiService.query = e.currentTarget.elements.searchQuery.value;
+
+    
     
     try {
         const result = await newsApiService.fetchArticles();
